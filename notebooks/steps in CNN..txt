@@ -1,0 +1,21 @@
+steps in CNN 
+
+1. load data (pre-loaded data in TF, or load from directory) 
+data already split into train & val (test) 
+
+choose image size: less than 200 * 200 
+choose batch size = 32
+img, label = load_data(.......
+train_ds = load_data_from_direcory(.......
+2. build sequential model and add layers 
+	input 
+	conv layers followed by pool layers
+	add dense layers 
+	last layer: # of units (neurons) = # classes 
+3. compile model (choose optimizer, choose loss (according to classes: binary or categorical), choose metrics according to task (classification or regression) 
+4. train (fit) model, check overfit 
+
+prevent overfit ==> use dropout layer 
+ 
+	 
+	

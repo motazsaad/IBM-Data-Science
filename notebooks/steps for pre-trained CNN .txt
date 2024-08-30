@@ -1,0 +1,21 @@
+steps for pre-trained CNN 
+
+1. load data (pre-loaded data in TF, or load from directory) 
+data already split into train & val (test) 
+
+choose image size: less than 200 * 200 
+choose batch size = 32
+img, label = load_data(.......
+train_ds = load_data_from_direcory(.......
+
+2. build CNN without pre-trained model, and report accuracy 
+
+3. choose pre-trained model 
+
+4. load pre-trained model without top (last layer), and freeze model (trainable = false)
+
+5. add classification head (2 or 3 layers) 
+
+6. compile model (optimizer, loss, metrics, ...) 
+
+7. fit model report accuracy, compare with step 2 
